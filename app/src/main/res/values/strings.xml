@@ -1,0 +1,68 @@
+<resources>
+    <string name="simon_says">SIMON SAYS</string>
+    <string name="drum">DRUMS</string>
+    <string name="game_tv">LET\'S PLAY</string>
+    <string name="play_button">PLAY NOW</string>
+    <string name="difficult_button">DIFFICULT</string>
+    <string name="type_of_board_button">TYPE OF BOARD</string>
+    <string name="back_game_screen_button">BACK</string>
+    <string name="Level_tv">LEVEL</string>
+    <string name="beginner">BEGINNER</string>
+    <string name="amateur">AMATEUR</string>
+    <string name="professional">PROFESSIONAL</string>
+    <string name="new_game_button">NEW GAME</string>
+    <string name="score_button">SCORE</string>
+    <string name="exit_button">EXIT</string>
+    <string name="normal">CLASSIC</string>
+    <string name="piano">PIANO</string>
+    <string name="type_of_board_tv">TYPE OF BOARD</string>
+    <string name="back_type_of_board_button">BACK</string>
+    <string name="xylophone">XYLOPHONE</string>
+    <string name="game_over_tv">GAME OVER</string>
+    <string name="current_score_tv">CURRENT SCORE</string>
+    <string name="high_score_tv">"YOUR BEST SCORE "</string>
+    <string name="play_as_guest">PLAY AS A GUEST</string>
+    <string name="guest">GUEST</string>
+    <string name="welcome">WELCOME TO</string>
+    <string name="game_title">G A M E</string>
+    <string name="name">NAME</string>
+    <string name="your_name">YOUR NAME</string>
+    <string name="insert_your_name">INSERT YOUR NAME</string>
+    <string name="enter">ENTER</string>
+    <string name="cancel">CANCEL</string>
+    <string name="simon">SIMON TURN</string>
+
+
+    <string-array name="difficultSpinner">
+        <item>@string/beginner</item>
+        <item>@string/amateur</item>
+        <item>@string/professional</item>
+    </string-array>
+
+    <string-array name="BoardSpinner">
+        <item>@string/normal</item>
+        <item>@string/drum</item>
+        <item>@string/piano</item>
+        <item>@string/xylophone</item>
+    </string-array>
+    <string name="rank">RANK</string>
+    <string name="dialog_alert_main">"PLEASE, INSERT YOUR NAME "</string>
+    <string name="exit_app">Exit Application</string>
+    <string name="click_exit">"Click Yes to exit "</string>
+    <string name="yes">Yes</string>
+    <string name="no">NO</string>
+    <string name="back_key_dialog">Do you want to return to the previous screen</string>
+    <string name="sure_sentece">Click Yes if you are sure</string>
+    <string name="brings_out">This back button brings out to home application screen</string>
+    <string name="rotze">Want to stay</string>
+    <string name="lo_rotze">Prefer to go out</string>
+    <string name="menu_back">Warning</string>
+    <string name="score_new">YOUR SCORE  IS:</string>
+    <string name="table_score">TABLE SCORE</string>
+    <string name="try_again_button">TRY AGAIN</string>
+    <string name="try_again_text">WOULD YOU LIKE TO TRY AGAIN?</string>
+    <string name="submit">SUBMIT</string>
+    <string name="your_turn">YOUR TURN</string>
+    <string name="simon_title">SIMON SAYS</string>
+</resources>
+

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NameForRecordActivity"
+    android:background="@drawable/background_simon"
+    android:orientation="vertical">
+    
+    <TextView
+    android:layout_marginTop="50dp"
+    android:textSize="40sp"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:shadowColor="@color/PurpleSimon"
+    android:shadowRadius="15"
+    android:textColor="@color/YellowSimon"
+    android:text="@string/score_new"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:id="@+id/your_score_is"
+        />
+
+    <TextView
+        android:layout_below="@id/your_score_is"
+        android:layout_marginTop="30dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:shadowColor="@color/PurpleSimon"
+        android:shadowRadius="15"
+        android:id="@+id/score_label"
+        android:textColor="@color/YellowSimon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/linear_record"
+        android:weightSum="3"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/dialog_alert_main"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:textColor="@color/PurpleSimon"
+        android:textStyle="bold"
+        android:id="@+id/scoreLabel"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_weight="2"
+        android:textColor="@color/PurpleSimon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="80dp"
+        android:gravity="center"
+        android:id="@+id/player_name_from_edit_text"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_below="@id/linear_record"
+        android:layout_margin="20dp"
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:background="@drawable/shape_selector_pink"
+        android:textColor="@color/White"
+        android:textSize="20sp" />
+</RelativeLayout>

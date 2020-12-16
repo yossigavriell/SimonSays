@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_simon"
+    android:weightSum="8"
+    tools:context=".GameScreenActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/game_tv"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/PurpleSimon"
+        android:textStyle="bold"
+        android:id="@+id/game_screen_tv"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/PurpleSimon"
+        android:shadowRadius="15"
+        android:text="@string/simon_title"
+        android:layout_weight="3"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:textColor="@color/YellowSimon"
+        android:textStyle="bold"
+        android:id="@+id/game_screen_tv_simon"/>
+
+    <fr.ganfra.materialspinner.MaterialSpinner
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="120dp"
+        android:id="@+id/spinner"
+        android:entries="@array/difficultSpinner" />
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner"
+        android:layout_marginTop="10dp">
+
+        <ViewFlipper
+            android:id="@+id/flip_a"
+            android:layout_width="210dp"
+            android:layout_height="210dp"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/image_simon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:padding="5dp"
+                android:src="@drawable/classic_board" />
+
+            <ImageView
+                android:id="@+id/image_drum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:src="@drawable/drums_board" />
+
+
+            <ImageView
+                android:id="@+id/image_piano"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:src="@drawable/piano_board" />
+
+            <ImageView
+                android:id="@+id/image_xylophone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:src="@drawable/xylophone_board" />
+
+        </ViewFlipper>
+
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/ic_arrow_forward_black_24dp" />
+
+        <Button
+
+            android:id="@+id/prev_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/ic_arrow_back_black_24dp" />
+    </RelativeLayout>
+
+    <Button
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:text="@string/play_button"
+    android:textSize="25sp"
+    android:textStyle="bold"
+    android:textColor="@color/White"
+    android:background="@drawable/shape_selector_pink"
+    android:layout_marginHorizontal="80dp"
+    android:layout_below="@id/game_screen_tv"
+    android:layout_marginTop="10dp"
+    android:id="@+id/play_btn"/>
+
+
+
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back_game_screen_button"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="110dp"
+        android:textColor="@color/White"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:background="@drawable/shape_selector_gray"
+        android:id="@+id/back_btn"/>
+
+</LinearLayout>

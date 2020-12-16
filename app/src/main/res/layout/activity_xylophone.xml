@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_xylophone_tv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_simon"
+    android:orientation="vertical"
+    android:weightSum="5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:shadowColor="@color/PurpleSimon"
+        android:shadowRadius="15"
+        android:text="@string/xylophone"
+        android:textColor="@color/YellowSimon"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:padding="1dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/your_score_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/center_linear"
+            android:layout_weight="1"
+            android:text="@string/score_new"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/PurpleSimon"
+            android:textSize="20sp" />
+
+        <TextView
+
+            android:id="@+id/score_player_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/center_linear"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/PurpleSimon"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:padding="5dp"
+        android:layout_weight="2.6">
+
+        <Button
+
+            android:id="@+id/a_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp"
+            android:background="@drawable/shape_selector_purple" />
+
+        <Button
+
+            android:id="@+id/b_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/a_key"
+            android:layout_marginHorizontal="13dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shape_selector_pink" />
+
+        <Button
+
+            android:id="@+id/c_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/b_key"
+            android:layout_marginHorizontal="23dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shape_selector_yellow" />
+
+        <Button
+
+            android:id="@+id/d_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/c_key"
+            android:layout_marginHorizontal="33dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shape_selector_tourquise" />
+
+        <Button
+
+            android:id="@+id/e_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/d_key"
+            android:layout_marginHorizontal="43dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shape_selector_blue" />
+
+
+        <Button
+
+            android:id="@+id/f_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/e_key"
+            android:layout_marginHorizontal="53dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shape_selector_gray" />
+
+        <Button
+
+            android:id="@+id/g_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/f_key"
+            android:layout_marginHorizontal="63dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shape_selector_purple" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/h_key"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:textColor="@color/PurpleSimon"
+        android:textSize="30sp" />
+
+
+</LinearLayout>

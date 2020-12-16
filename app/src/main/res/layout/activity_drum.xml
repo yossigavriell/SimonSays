@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_simon"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context=".DrumActivity">
+
+    <TextView
+        android:layout_marginTop="60dp"
+        android:id="@+id/title_drum"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:shadowColor="@color/PurpleSimon"
+        android:shadowRadius="15"
+        android:textColor="@color/YellowSimon"
+        android:gravity="center"
+        android:text="@string/drum"
+        android:textStyle="bold"
+        android:textSize="50sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="45dp"
+        android:layout_weight="0.5"
+        android:padding="10dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/your_score_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/center_linear"
+            android:layout_weight="1"
+            android:text="@string/score_new"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/PurpleSimon"
+            android:textSize="20sp" />
+
+        <TextView
+
+            android:id="@+id/score_player_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/center_linear"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/PurpleSimon"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="3"
+        android:background="@drawable/shape_selector_gray"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/drum1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/drum_circle" />
+
+
+        <Button
+            android:id="@+id/drum2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@id/drum1"
+            android:background="@drawable/drum_circle" />
+
+        <Button
+            android:id="@+id/drum3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/drum1"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/drum_circle" />
+
+        <Button
+            android:id="@+id/drum4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/drum1"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/drum_circle" />
+
+        <Button
+            android:id="@+id/drum5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drum1"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/drum_circle" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textColor="@color/PurpleSimon"
+        android:layout_marginHorizontal="20dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="30sp" />
+
+
+</LinearLayout>

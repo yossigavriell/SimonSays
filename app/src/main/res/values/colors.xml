@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="PurpleSimon">#652D90</color>
+    <color name="YellowSimon">#FFDD73</color>
+    <color name="PinkSimon">#FB93BD</color>
+    <color name="BlueSimon">#00BBF1</color>
+    <color name="GraySimon">#A0A2A4</color>
+    <color name="TourquiseSimon">#3DBBA0</color>
+    <color name="White">#FFFFFF</color>
+
+
+</resources>

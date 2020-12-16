@@ -1,0 +1,35 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <shape>
+            <gradient
+
+                android:startColor="@color/YellowSimon"
+                android:centerColor="@color/YellowSimon"
+                android:endColor="@color/YellowSimon"
+                android:angle="270"/>
+
+            <stroke
+                android:width="2dp"
+                android:dashWidth="2dp"
+                android:color="@color/PurpleSimon"/>
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <gradient
+
+                android:startColor="@color/YellowSimon"
+                android:endColor="@color/White"
+                android:angle="270"/>
+
+            <stroke
+                android:dashWidth="2dp"
+                android:width="2dp"
+                android:color="@color/PurpleSimon"/>
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+
+
+</selector>

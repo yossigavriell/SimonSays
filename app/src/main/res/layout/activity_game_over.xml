@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_simon_blueal"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="10"
+    tools:context=".GameOverActivity">
+
+    <TextView
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/YellowSimon"
+        android:shadowColor="@color/PurpleSimon"
+        android:shadowRadius="15"
+        android:id="@+id/game_over_score_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/game_over_tv"
+        android:textSize="60sp"/>
+
+
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/try_again_text"
+        android:textColor="@color/PurpleSimon"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="2"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+    <Button
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:id="@+id/try_again_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/try_again_button"
+        android:background="@drawable/shape_selector_pink"
+        android:textColor="@color/White"
+        android:textSize="20sp"
+        android:onClick="tryAgain"/>
+
+    <Button
+
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:id="@+id/back_btn_game_over"
+        android:layout_width="match_parent"
+        android:textColor="@color/White"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_selector_gray"
+        android:onClick="backButton"
+        android:text="@string/no"
+        />
+
+    </LinearLayout>
+
+
+</LinearLayout>
